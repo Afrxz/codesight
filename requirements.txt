@@ -1,0 +1,13 @@
+# RAGG: retrieval-augmented Q&A over codebases.
+fastapi>=0.115,<1            # the web API
+uvicorn>=0.30,<1             # serves it
+qdrant-client>=1.12,<2       # vector database (embedded mode needs no server)
+fastembed>=0.5,<1            # local embedding model + cross-encoder (ONNX, CPU)
+tree-sitter>=0.23,<1         # parsing, for AST-aware chunking
+tree-sitter-language-pack>=0.6,<2   # grammars for Python, JS/TS, Java, Go, Rust, ...
+litellm>=1.50,<2             # one interface to DeepSeek / Groq / OpenAI / Gemini
+python-dotenv>=1.0,<2        # settings in .env
+pydantic>=2.6,<3
+pathspec>=0.12,<2            # .gitignore rules
+httpx>=0.27,<1               # FastAPI's test client
+pytest>=8,<9                 # tests (dev)

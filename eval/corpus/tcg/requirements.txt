@@ -1,0 +1,11 @@
+# Core dependencies for the TCG Portfolio & Market Agent.
+# Pinned to major versions for reproducibility while allowing patch updates.
+
+requests>=2.31,<3          # HTTP client for the live market API (Phase 2)
+pydantic>=2.6,<3           # Typed, validated data models (MarketData, Decision)
+python-dotenv>=1.0,<2      # Loads secrets from .env into the environment
+streamlit>=1.33,<2         # Dashboard UI (Phase 5)
+openai>=1.30,<2            # LLM client. We point it at DeepSeek's OpenAI-compatible
+                           # endpoint now; swapping providers later is a config change.
+mcp>=1.10,<2               # official MCP Python SDK: the market-data server (Layer C)
+pytest>=8,<9               # Test runner (dev)

@@ -1,0 +1,538 @@
+{
+  "run_id": "20261020-143435",
+  "created_at": "2026-10-20T14:34:35+00:00",
+  "corpus": {
+    "name": "TCG snapshot",
+    "files": 83,
+    "questions": 50,
+    "answerable": 45
+  },
+  "indexes": {
+    "ast/bge-small": {
+      "chunks": 912,
+      "index_seconds": 23.6
+    },
+    "ast/jina-code": {
+      "chunks": 912,
+      "index_seconds": 155.0
+    },
+    "ast-merge/bge-small": {
+      "chunks": 560,
+      "index_seconds": 72.3
+    },
+    "window/bge-small": {
+      "chunks": 401,
+      "index_seconds": 52.9
+    }
+  },
+  "retrieval": {
+    "k_values": [
+      1,
+      3,
+      5,
+      10
+    ],
+    "configs": [
+      {
+        "label": "Window \u00b7 bge-small \u00b7 dense",
+        "chunker": "window",
+        "embed_model": "BAAI/bge-small-en-v1.5",
+        "mode": "dense",
+        "rerank": false,
+        "chunks": 401,
+        "recall": {
+          "1": 0.3778,
+          "3": 0.6889,
+          "5": 0.8,
+          "10": 0.8667
+        },
+        "mrr": 0.5541,
+        "context_precision@5": 0.0816,
+        "gold_coverage@5": 0.5897,
+        "latency_ms": {
+          "p50": 59.6,
+          "p90": 73.7
+        },
+        "by_category": {
+          "behavior": 1.0,
+          "config": 0.5,
+          "how": 0.8182,
+          "lookup": 0.625,
+          "why": 0.75
+        }
+      },
+      {
+        "label": "Window \u00b7 bge-small \u00b7 BM25",
+        "chunker": "window",
+        "embed_model": "BAAI/bge-small-en-v1.5",
+        "mode": "sparse",
+        "rerank": false,
+        "chunks": 401,
+        "recall": {
+          "1": 0.4,
+          "3": 0.6,
+          "5": 0.7111,
+          "10": 0.8889
+        },
+        "mrr": 0.5442,
+        "context_precision@5": 0.0769,
+        "gold_coverage@5": 0.5571,
+        "latency_ms": {
+          "p50": 28.3,
+          "p90": 58.5
+        },
+        "by_category": {
+          "behavior": 0.6667,
+          "config": 0.5,
+          "how": 0.7727,
+          "lookup": 0.5,
+          "why": 1.0
+        }
+      },
+      {
+        "label": "Window \u00b7 bge-small \u00b7 hybrid (RRF)",
+        "chunker": "window",
+        "embed_model": "BAAI/bge-small-en-v1.5",
+        "mode": "hybrid",
+        "rerank": false,
+        "chunks": 401,
+        "recall": {
+          "1": 0.4889,
+          "3": 0.7556,
+          "5": 0.8444,
+          "10": 0.9333
+        },
+        "mrr": 0.6402,
+        "context_precision@5": 0.0777,
+        "gold_coverage@5": 0.6414,
+        "latency_ms": {
+          "p50": 109.9,
+          "p90": 126.4
+        },
+        "by_category": {
+          "behavior": 0.8889,
+          "config": 0.5,
+          "how": 0.9091,
+          "lookup": 0.75,
+          "why": 0.75
+        }
+      },
+      {
+        "label": "Window \u00b7 bge-small \u00b7 hybrid (RRF) + rerank",
+        "chunker": "window",
+        "embed_model": "BAAI/bge-small-en-v1.5",
+        "mode": "hybrid",
+        "rerank": true,
+        "chunks": 401,
+        "recall": {
+          "1": 0.4667,
+          "3": 0.6667,
+          "5": 0.8,
+          "10": 0.9111
+        },
+        "mrr": 0.5995,
+        "context_precision@5": 0.0769,
+        "gold_coverage@5": 0.5695,
+        "latency_ms": {
+          "p50": 2459.5,
+          "p90": 4476.5
+        },
+        "by_category": {
+          "behavior": 0.8889,
+          "config": 1.0,
+          "how": 0.8182,
+          "lookup": 0.625,
+          "why": 0.75
+        }
+      },
+      {
+        "label": "AST + merge \u00b7 bge-small \u00b7 dense",
+        "chunker": "ast-merge",
+        "embed_model": "BAAI/bge-small-en-v1.5",
+        "mode": "dense",
+        "rerank": false,
+        "chunks": 560,
+        "recall": {
+          "1": 0.4222,
+          "3": 0.7111,
+          "5": 0.7333,
+          "10": 0.8444
+        },
+        "mrr": 0.568,
+        "context_precision@5": 0.1188,
+        "gold_coverage@5": 0.5555,
+        "latency_ms": {
+          "p50": 151.9,
+          "p90": 252.5
+        },
+        "by_category": {
+          "behavior": 0.8889,
+          "config": 0.5,
+          "how": 0.7273,
+          "lookup": 0.625,
+          "why": 0.75
+        }
+      },
+      {
+        "label": "AST + merge \u00b7 bge-small \u00b7 hybrid (RRF)",
+        "chunker": "ast-merge",
+        "embed_model": "BAAI/bge-small-en-v1.5",
+        "mode": "hybrid",
+        "rerank": false,
+        "chunks": 560,
+        "recall": {
+          "1": 0.4,
+          "3": 0.6667,
+          "5": 0.7111,
+          "10": 0.8889
+        },
+        "mrr": 0.5589,
+        "context_precision@5": 0.097,
+        "gold_coverage@5": 0.5194,
+        "latency_ms": {
+          "p50": 265.4,
+          "p90": 307.9
+        },
+        "by_category": {
+          "behavior": 0.7778,
+          "config": 0.5,
+          "how": 0.6818,
+          "lookup": 0.75,
+          "why": 0.75
+        }
+      },
+      {
+        "label": "AST \u00b7 bge-small \u00b7 dense",
+        "chunker": "ast",
+        "embed_model": "BAAI/bge-small-en-v1.5",
+        "mode": "dense",
+        "rerank": false,
+        "chunks": 912,
+        "recall": {
+          "1": 0.4222,
+          "3": 0.7111,
+          "5": 0.7778,
+          "10": 0.8444
+        },
+        "mrr": 0.5731,
+        "context_precision@5": 0.1437,
+        "gold_coverage@5": 0.5441,
+        "latency_ms": {
+          "p50": 136.4,
+          "p90": 184.6
+        },
+        "by_category": {
+          "behavior": 0.8889,
+          "config": 0.5,
+          "how": 0.8182,
+          "lookup": 0.625,
+          "why": 0.75
+        }
+      },
+      {
+        "label": "AST \u00b7 bge-small \u00b7 BM25",
+        "chunker": "ast",
+        "embed_model": "BAAI/bge-small-en-v1.5",
+        "mode": "sparse",
+        "rerank": false,
+        "chunks": 912,
+        "recall": {
+          "1": 0.4667,
+          "3": 0.6667,
+          "5": 0.7333,
+          "10": 0.8
+        },
+        "mrr": 0.5883,
+        "context_precision@5": 0.1319,
+        "gold_coverage@5": 0.5412,
+        "latency_ms": {
+          "p50": 81.4,
+          "p90": 150.1
+        },
+        "by_category": {
+          "behavior": 0.8889,
+          "config": 0.0,
+          "how": 0.6818,
+          "lookup": 0.75,
+          "why": 1.0
+        }
+      },
+      {
+        "label": "AST \u00b7 bge-small \u00b7 hybrid (RRF)",
+        "chunker": "ast",
+        "embed_model": "BAAI/bge-small-en-v1.5",
+        "mode": "hybrid",
+        "rerank": false,
+        "chunks": 912,
+        "recall": {
+          "1": 0.4667,
+          "3": 0.6889,
+          "5": 0.7333,
+          "10": 0.8667
+        },
+        "mrr": 0.5998,
+        "context_precision@5": 0.1294,
+        "gold_coverage@5": 0.5615,
+        "latency_ms": {
+          "p50": 287.1,
+          "p90": 332.7
+        },
+        "by_category": {
+          "behavior": 0.7778,
+          "config": 0.0,
+          "how": 0.7727,
+          "lookup": 0.75,
+          "why": 0.75
+        }
+      },
+      {
+        "label": "AST \u00b7 bge-small \u00b7 hybrid (RRF) + rerank",
+        "chunker": "ast",
+        "embed_model": "BAAI/bge-small-en-v1.5",
+        "mode": "hybrid",
+        "rerank": true,
+        "chunks": 912,
+        "recall": {
+          "1": 0.5556,
+          "3": 0.7111,
+          "5": 0.7556,
+          "10": 0.8222
+        },
+        "mrr": 0.6475,
+        "context_precision@5": 0.1184,
+        "gold_coverage@5": 0.5794,
+        "latency_ms": {
+          "p50": 4552.0,
+          "p90": 4717.8
+        },
+        "by_category": {
+          "behavior": 0.7778,
+          "config": 0.5,
+          "how": 0.8182,
+          "lookup": 0.625,
+          "why": 0.75
+        }
+      },
+      {
+        "label": "AST \u00b7 jina-code \u00b7 dense",
+        "chunker": "ast",
+        "embed_model": "jinaai/jina-embeddings-v2-base-code",
+        "mode": "dense",
+        "rerank": false,
+        "chunks": 912,
+        "recall": {
+          "1": 0.4667,
+          "3": 0.6667,
+          "5": 0.6889,
+          "10": 0.8444
+        },
+        "mrr": 0.5775,
+        "context_precision@5": 0.1829,
+        "gold_coverage@5": 0.5216,
+        "latency_ms": {
+          "p50": 457.1,
+          "p90": 557.7
+        },
+        "by_category": {
+          "behavior": 0.5556,
+          "config": 0.0,
+          "how": 0.7727,
+          "lookup": 0.625,
+          "why": 1.0
+        }
+      },
+      {
+        "label": "AST \u00b7 jina-code \u00b7 hybrid (RRF)",
+        "chunker": "ast",
+        "embed_model": "jinaai/jina-embeddings-v2-base-code",
+        "mode": "hybrid",
+        "rerank": false,
+        "chunks": 912,
+        "recall": {
+          "1": 0.6,
+          "3": 0.6889,
+          "5": 0.7333,
+          "10": 0.9111
+        },
+        "mrr": 0.6748,
+        "context_precision@5": 0.1485,
+        "gold_coverage@5": 0.5742,
+        "latency_ms": {
+          "p50": 609.9,
+          "p90": 671.1
+        },
+        "by_category": {
+          "behavior": 0.7778,
+          "config": 0.0,
+          "how": 0.7727,
+          "lookup": 0.625,
+          "why": 1.0
+        }
+      },
+      {
+        "label": "AST \u00b7 jina-code \u00b7 hybrid (RRF) + rerank",
+        "chunker": "ast",
+        "embed_model": "jinaai/jina-embeddings-v2-base-code",
+        "mode": "hybrid",
+        "rerank": true,
+        "chunks": 912,
+        "recall": {
+          "1": 0.5556,
+          "3": 0.7111,
+          "5": 0.8,
+          "10": 0.8667
+        },
+        "mrr": 0.6575,
+        "context_precision@5": 0.1161,
+        "gold_coverage@5": 0.5639,
+        "latency_ms": {
+          "p50": 5170.3,
+          "p90": 5521.9
+        },
+        "by_category": {
+          "behavior": 0.7778,
+          "config": 0.5,
+          "how": 0.8636,
+          "lookup": 0.625,
+          "why": 1.0
+        }
+      }
+    ]
+  },
+  "generation": {
+    "label": "AST \u00b7 bge-small \u00b7 hybrid (RRF) + rerank",
+    "retrieval_label": "AST \u00b7 bge-small \u00b7 hybrid (RRF) + rerank",
+    "model": "DeepSeek \u00b7 deepseek-chat",
+    "questions": 50,
+    "errors": 0,
+    "key_fact_coverage": 0.9222,
+    "fully_correct_rate": 0.8444,
+    "cited_gold_rate": 0.7778,
+    "citation_validity": 0.9921,
+    "abstain_ok": 1.0,
+    "false_abstain_rate": 0.0222,
+    "caveat_rate": 0.2222,
+    "latency_ms": {
+      "p50": 7649.5,
+      "p90": 15499.6
+    },
+    "judge": {
+      "correctness": 4.7778,
+      "grounded": 4.9778,
+      "judged": 45
+    }
+  },
+  "generation_runs": [
+    {
+      "label": "AST \u00b7 bge-small \u00b7 hybrid (RRF) + rerank",
+      "retrieval_label": "AST \u00b7 bge-small \u00b7 hybrid (RRF) + rerank",
+      "model": "DeepSeek \u00b7 deepseek-chat",
+      "questions": 50,
+      "errors": 0,
+      "key_fact_coverage": 0.9222,
+      "fully_correct_rate": 0.8444,
+      "cited_gold_rate": 0.7778,
+      "citation_validity": 0.9921,
+      "abstain_ok": 1.0,
+      "false_abstain_rate": 0.0222,
+      "caveat_rate": 0.2222,
+      "latency_ms": {
+        "p50": 7649.5,
+        "p90": 15499.6
+      },
+      "judge": {
+        "correctness": 4.7778,
+        "grounded": 4.9778,
+        "judged": 45
+      }
+    },
+    {
+      "label": "AST \u00b7 bge-small \u00b7 hybrid (RRF)",
+      "retrieval_label": "AST \u00b7 bge-small \u00b7 hybrid (RRF)",
+      "model": "DeepSeek \u00b7 deepseek-chat",
+      "questions": 50,
+      "errors": 0,
+      "key_fact_coverage": 0.963,
+      "fully_correct_rate": 0.9111,
+      "cited_gold_rate": 0.7556,
+      "citation_validity": 0.9943,
+      "abstain_ok": 1.0,
+      "false_abstain_rate": 0.0222,
+      "caveat_rate": 0.2,
+      "latency_ms": {
+        "p50": 2146.5,
+        "p90": 2691.2
+      },
+      "judge": {
+        "correctness": 4.7333,
+        "grounded": 4.8889,
+        "judged": 45
+      }
+    },
+    {
+      "label": "Window \u00b7 bge-small \u00b7 hybrid (RRF) + rerank",
+      "retrieval_label": "Window \u00b7 bge-small \u00b7 hybrid (RRF) + rerank",
+      "model": "DeepSeek \u00b7 deepseek-chat",
+      "questions": 50,
+      "errors": 0,
+      "key_fact_coverage": 0.9667,
+      "fully_correct_rate": 0.9333,
+      "cited_gold_rate": 0.8444,
+      "citation_validity": 0.993,
+      "abstain_ok": 1.0,
+      "false_abstain_rate": 0.0,
+      "caveat_rate": 0.2222,
+      "latency_ms": {
+        "p50": 6641.0,
+        "p90": 8297.7
+      },
+      "judge": {
+        "correctness": 4.7333,
+        "grounded": 4.8889,
+        "judged": 45
+      }
+    },
+    {
+      "label": "Window \u00b7 bge-small \u00b7 hybrid (RRF)",
+      "retrieval_label": "Window \u00b7 bge-small \u00b7 hybrid (RRF)",
+      "model": "DeepSeek \u00b7 deepseek-chat",
+      "questions": 50,
+      "errors": 0,
+      "key_fact_coverage": 0.9889,
+      "fully_correct_rate": 0.9778,
+      "cited_gold_rate": 0.9111,
+      "citation_validity": 0.9953,
+      "abstain_ok": 1.0,
+      "false_abstain_rate": 0.0,
+      "caveat_rate": 0.1778,
+      "latency_ms": {
+        "p50": 2373.5,
+        "p90": 3002.5
+      },
+      "judge": {
+        "correctness": 4.9778,
+        "grounded": 5.0,
+        "judged": 45
+      }
+    }
+  ],
+  "settings": {
+    "candidates": 30,
+    "rerank_candidates": 20,
+    "rrf_k": 60,
+    "retrieve_k": 10,
+    "answer_top_k": 6,
+    "WINDOW_LINES": "60",
+    "WINDOW_OVERLAP": "15",
+    "MAX_FILE_KB": "300",
+    "EXTRA_IGNORE": "",
+    "EMBED_BATCH": "32"
+  },
+  "notes": [
+    "Retrieval metrics use the 45 answerable questions; answers use all 50.",
+    "Gold spans come from Python's ast module, independent of the chunker being measured.",
+    "Latency is wall-clock on the machine that ran the eval (see README for its specs).",
+    "Answer metrics re-scored from the stored answers (declined = the opening sentence says it's not in the code).",
+    "Answer metrics re-scored from the stored answers (declined = the opening sentence says it's not in the code)."
+  ]
+}

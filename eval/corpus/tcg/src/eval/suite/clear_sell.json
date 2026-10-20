@@ -1,0 +1,353 @@
+[
+  {
+    "task_id": "sell-01",
+    "description": "Owned PSA 10 well above its $350 sell target, +103% on cost",
+    "card": {
+      "name": "Charizard VMAX 020/189",
+      "set_code": "DAA",
+      "grade": "PSA 10",
+      "status": "owned",
+      "purchase_price": 180,
+      "target_sell": 350
+    },
+    "market": {
+      "best_listing": 355,
+      "listings": [
+        {
+          "price": 355,
+          "condition": "PSA 10",
+          "url": ""
+        }
+      ],
+      "sold_comps": [
+        {
+          "price": 360,
+          "date": "2026-10-17"
+        },
+        {
+          "price": 370,
+          "date": "2026-10-14"
+        },
+        {
+          "price": 365,
+          "date": "2026-10-11"
+        },
+        {
+          "price": 362,
+          "date": "2026-10-08"
+        },
+        {
+          "price": 368,
+          "date": "2026-10-05"
+        }
+      ],
+      "sold_avg": 365,
+      "sold_count": 7
+    },
+    "expected": {
+      "verdict": "sell"
+    },
+    "category": "clear_sell",
+    "graders": [
+      "schema",
+      "verdict",
+      "vs_market_math",
+      "confidence_cap",
+      "pnl_presence"
+    ]
+  },
+  {
+    "task_id": "sell-02",
+    "description": "Owned raw card above its sell target, +80% on cost",
+    "card": {
+      "name": "Rayquaza VMAX 218/203",
+      "set_code": "EVS",
+      "grade": "Raw",
+      "status": "owned",
+      "purchase_price": 300,
+      "target_sell": 500
+    },
+    "market": {
+      "best_listing": 530,
+      "listings": [
+        {
+          "price": 530,
+          "condition": "Raw \u00b7 Near Mint",
+          "url": ""
+        }
+      ],
+      "sold_comps": [
+        {
+          "price": 535,
+          "date": "2026-10-17"
+        },
+        {
+          "price": 545,
+          "date": "2026-10-14"
+        },
+        {
+          "price": 540,
+          "date": "2026-10-11"
+        },
+        {
+          "price": 538,
+          "date": "2026-10-08"
+        },
+        {
+          "price": 542,
+          "date": "2026-10-05"
+        }
+      ],
+      "sold_avg": 540,
+      "sold_count": 9
+    },
+    "expected": {
+      "verdict": "sell"
+    },
+    "category": "clear_sell",
+    "graders": [
+      "schema",
+      "verdict",
+      "vs_market_math",
+      "confidence_cap",
+      "pnl_presence"
+    ]
+  },
+  {
+    "task_id": "sell-03",
+    "description": "Owned raw card above its sell target, +100% on cost",
+    "card": {
+      "name": "Gengar VMAX 271/264",
+      "set_code": "FST",
+      "grade": "Raw",
+      "status": "owned",
+      "purchase_price": 150,
+      "target_sell": 280
+    },
+    "market": {
+      "best_listing": 295,
+      "listings": [
+        {
+          "price": 295,
+          "condition": "Raw \u00b7 Near Mint",
+          "url": ""
+        }
+      ],
+      "sold_comps": [
+        {
+          "price": 298,
+          "date": "2026-10-17"
+        },
+        {
+          "price": 302,
+          "date": "2026-10-14"
+        },
+        {
+          "price": 300,
+          "date": "2026-10-11"
+        },
+        {
+          "price": 297,
+          "date": "2026-10-08"
+        },
+        {
+          "price": 303,
+          "date": "2026-10-05"
+        }
+      ],
+      "sold_avg": 300,
+      "sold_count": 6
+    },
+    "expected": {
+      "verdict": "sell"
+    },
+    "category": "clear_sell",
+    "graders": [
+      "schema",
+      "verdict",
+      "vs_market_math",
+      "confidence_cap",
+      "pnl_presence"
+    ]
+  },
+  {
+    "task_id": "sell-04",
+    "description": "Owned raw card above its sell target, +92% on cost",
+    "card": {
+      "name": "Espeon VMAX 270/264",
+      "set_code": "FST",
+      "grade": "Raw",
+      "status": "owned",
+      "purchase_price": 120,
+      "target_sell": 200
+    },
+    "market": {
+      "best_listing": 225,
+      "listings": [
+        {
+          "price": 225,
+          "condition": "Raw \u00b7 Near Mint",
+          "url": ""
+        }
+      ],
+      "sold_comps": [
+        {
+          "price": 228,
+          "date": "2026-10-17"
+        },
+        {
+          "price": 232,
+          "date": "2026-10-14"
+        },
+        {
+          "price": 230,
+          "date": "2026-10-11"
+        },
+        {
+          "price": 229,
+          "date": "2026-10-08"
+        },
+        {
+          "price": 231,
+          "date": "2026-10-05"
+        }
+      ],
+      "sold_avg": 230,
+      "sold_count": 8
+    },
+    "expected": {
+      "verdict": "sell"
+    },
+    "category": "clear_sell",
+    "graders": [
+      "schema",
+      "verdict",
+      "vs_market_math",
+      "confidence_cap",
+      "pnl_presence"
+    ]
+  },
+  {
+    "task_id": "sell-05",
+    "description": "Owned raw card past a $1,500 sell target, +100% on cost",
+    "card": {
+      "name": "Umbreon VMAX 215/203",
+      "set_code": "EVS",
+      "grade": "Raw",
+      "status": "owned",
+      "purchase_price": 800,
+      "target_sell": 1500
+    },
+    "market": {
+      "best_listing": 1580,
+      "listings": [
+        {
+          "price": 1580,
+          "condition": "Raw \u00b7 Near Mint",
+          "url": ""
+        }
+      ],
+      "sold_comps": [
+        {
+          "price": 1590,
+          "date": "2026-10-17"
+        },
+        {
+          "price": 1610,
+          "date": "2026-10-14"
+        },
+        {
+          "price": 1600,
+          "date": "2026-10-11"
+        },
+        {
+          "price": 1595,
+          "date": "2026-10-08"
+        },
+        {
+          "price": 1605,
+          "date": "2026-10-05"
+        }
+      ],
+      "sold_avg": 1600,
+      "sold_count": 11
+    },
+    "expected": {
+      "verdict": "sell"
+    },
+    "category": "clear_sell",
+    "graders": [
+      "schema",
+      "verdict",
+      "vs_market_math",
+      "confidence_cap",
+      "pnl_presence"
+    ]
+  },
+  {
+    "task_id": "sell-06",
+    "description": "Owned, +160% on cost and the price has turned down over the month",
+    "card": {
+      "name": "Gardevoir ex 245/198",
+      "set_code": "SVI",
+      "grade": "Raw",
+      "status": "owned",
+      "purchase_price": 100
+    },
+    "market": {
+      "best_listing": 255,
+      "listings": [
+        {
+          "price": 255,
+          "condition": "Raw \u00b7 Near Mint",
+          "url": ""
+        }
+      ],
+      "sold_comps": [
+        {
+          "price": 258,
+          "date": "2026-10-17"
+        },
+        {
+          "price": 262,
+          "date": "2026-10-14"
+        },
+        {
+          "price": 260,
+          "date": "2026-10-11"
+        },
+        {
+          "price": 257,
+          "date": "2026-10-08"
+        },
+        {
+          "price": 263,
+          "date": "2026-10-05"
+        }
+      ],
+      "sold_avg": 260,
+      "sold_count": 8
+    },
+    "history": [
+      {
+        "days_ago": 25,
+        "sold_avg": 330
+      },
+      {
+        "days_ago": 15,
+        "sold_avg": 300
+      }
+    ],
+    "expected": {
+      "verdict": "sell"
+    },
+    "category": "clear_sell",
+    "graders": [
+      "schema",
+      "verdict",
+      "vs_market_math",
+      "confidence_cap",
+      "pnl_presence"
+    ]
+  }
+]

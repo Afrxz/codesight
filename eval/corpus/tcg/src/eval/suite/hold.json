@@ -1,0 +1,427 @@
+[
+  {
+    "task_id": "hold-01",
+    "description": "Watched: cheapest listing 1% above market",
+    "card": {
+      "name": "Mewtwo ex 205/165",
+      "set_code": "151",
+      "grade": "Raw",
+      "status": "watching"
+    },
+    "market": {
+      "best_listing": 505,
+      "listings": [
+        {
+          "price": 505,
+          "condition": "Raw \u00b7 Near Mint",
+          "url": ""
+        }
+      ],
+      "sold_comps": [
+        {
+          "price": 498,
+          "date": "2026-10-17"
+        },
+        {
+          "price": 502,
+          "date": "2026-10-14"
+        },
+        {
+          "price": 500,
+          "date": "2026-10-11"
+        },
+        {
+          "price": 501,
+          "date": "2026-10-08"
+        },
+        {
+          "price": 499,
+          "date": "2026-10-05"
+        }
+      ],
+      "sold_avg": 500,
+      "sold_count": 8
+    },
+    "expected": {
+      "verdict": "hold"
+    },
+    "category": "hold",
+    "graders": [
+      "schema",
+      "verdict",
+      "vs_market_math",
+      "confidence_cap",
+      "pnl_presence"
+    ]
+  },
+  {
+    "task_id": "hold-02",
+    "description": "Watched: cheapest listing 15% above market",
+    "card": {
+      "name": "Pikachu V 157/172",
+      "set_code": "BRS",
+      "grade": "PSA 10",
+      "status": "watching",
+      "target_buy": 130
+    },
+    "market": {
+      "best_listing": 345,
+      "listings": [
+        {
+          "price": 345,
+          "condition": "PSA 10",
+          "url": ""
+        }
+      ],
+      "sold_comps": [
+        {
+          "price": 298,
+          "date": "2026-10-17"
+        },
+        {
+          "price": 302,
+          "date": "2026-10-14"
+        },
+        {
+          "price": 300,
+          "date": "2026-10-11"
+        },
+        {
+          "price": 301,
+          "date": "2026-10-08"
+        },
+        {
+          "price": 299,
+          "date": "2026-10-05"
+        }
+      ],
+      "sold_avg": 300,
+      "sold_count": 6
+    },
+    "expected": {
+      "verdict": "hold"
+    },
+    "category": "hold",
+    "graders": [
+      "schema",
+      "verdict",
+      "vs_market_math",
+      "confidence_cap",
+      "pnl_presence"
+    ]
+  },
+  {
+    "task_id": "hold-03",
+    "description": "Watched: listing only 3% under market, no target",
+    "card": {
+      "name": "Blastoise ex 200/165",
+      "set_code": "151",
+      "grade": "Raw",
+      "status": "watching"
+    },
+    "market": {
+      "best_listing": 290,
+      "listings": [
+        {
+          "price": 290,
+          "condition": "Raw \u00b7 Near Mint",
+          "url": ""
+        }
+      ],
+      "sold_comps": [
+        {
+          "price": 298,
+          "date": "2026-10-17"
+        },
+        {
+          "price": 302,
+          "date": "2026-10-14"
+        },
+        {
+          "price": 300,
+          "date": "2026-10-11"
+        },
+        {
+          "price": 299,
+          "date": "2026-10-08"
+        },
+        {
+          "price": 301,
+          "date": "2026-10-05"
+        }
+      ],
+      "sold_avg": 300,
+      "sold_count": 9
+    },
+    "expected": {
+      "verdict": "hold"
+    },
+    "category": "hold",
+    "graders": [
+      "schema",
+      "verdict",
+      "vs_market_math",
+      "confidence_cap",
+      "pnl_presence"
+    ]
+  },
+  {
+    "task_id": "hold-04",
+    "description": "Owned: +26% on cost, no sell target",
+    "card": {
+      "name": "Lugia V 186/195",
+      "set_code": "SIT",
+      "grade": "PSA 9",
+      "status": "owned",
+      "purchase_price": 95
+    },
+    "market": {
+      "best_listing": 115,
+      "listings": [
+        {
+          "price": 115,
+          "condition": "PSA 9",
+          "url": ""
+        }
+      ],
+      "sold_comps": [
+        {
+          "price": 118,
+          "date": "2026-10-17"
+        },
+        {
+          "price": 122,
+          "date": "2026-10-14"
+        },
+        {
+          "price": 120,
+          "date": "2026-10-11"
+        },
+        {
+          "price": 119,
+          "date": "2026-10-08"
+        },
+        {
+          "price": 121,
+          "date": "2026-10-05"
+        }
+      ],
+      "sold_avg": 120,
+      "sold_count": 5
+    },
+    "expected": {
+      "verdict": "hold"
+    },
+    "category": "hold",
+    "graders": [
+      "schema",
+      "verdict",
+      "vs_market_math",
+      "confidence_cap",
+      "pnl_presence"
+    ]
+  },
+  {
+    "task_id": "hold-05",
+    "description": "Owned: +32% on cost, well under its $400 sell target",
+    "card": {
+      "name": "Giratina V 186/196",
+      "set_code": "LOR",
+      "grade": "PSA 10",
+      "status": "owned",
+      "purchase_price": 220,
+      "target_sell": 400
+    },
+    "market": {
+      "best_listing": 300,
+      "listings": [
+        {
+          "price": 300,
+          "condition": "PSA 10",
+          "url": ""
+        }
+      ],
+      "sold_comps": [
+        {
+          "price": 285,
+          "date": "2026-10-17"
+        },
+        {
+          "price": 290,
+          "date": "2026-10-14"
+        },
+        {
+          "price": 295,
+          "date": "2026-10-11"
+        },
+        {
+          "price": 290,
+          "date": "2026-10-08"
+        }
+      ],
+      "sold_avg": 290,
+      "sold_count": 4
+    },
+    "expected": {
+      "verdict": "hold"
+    },
+    "category": "hold",
+    "graders": [
+      "schema",
+      "verdict",
+      "vs_market_math",
+      "confidence_cap",
+      "pnl_presence"
+    ]
+  },
+  {
+    "task_id": "hold-06",
+    "description": "Owned, pulled from a pack ($0 cost), no sell target",
+    "card": {
+      "name": "Gengar 94",
+      "set_code": "30C",
+      "grade": "Raw",
+      "status": "owned",
+      "purchase_price": 0,
+      "acquired": "pulled"
+    },
+    "market": {
+      "best_listing": null,
+      "listings": [],
+      "sold_comps": [],
+      "sold_avg": 54.2,
+      "sold_count": null,
+      "avg_30d": 68.24,
+      "stats": {
+        "position_in_30d_range": 0.07,
+        "low_30d": 50.21,
+        "high_30d": 105.06
+      },
+      "source_note": "JustTCG Near Mint Holofoil price."
+    },
+    "expected": {
+      "verdict": "hold"
+    },
+    "category": "hold",
+    "graders": [
+      "schema",
+      "verdict",
+      "vs_market_math",
+      "confidence_cap",
+      "pnl_presence"
+    ]
+  },
+  {
+    "task_id": "hold-07",
+    "description": "Watched: 7% under market but above the $100 buy target",
+    "card": {
+      "name": "Sylveon VMAX 212/203",
+      "set_code": "EVS",
+      "grade": "Raw",
+      "status": "watching",
+      "target_buy": 100
+    },
+    "market": {
+      "best_listing": 140,
+      "listings": [
+        {
+          "price": 140,
+          "condition": "Raw \u00b7 Near Mint",
+          "url": ""
+        }
+      ],
+      "sold_comps": [
+        {
+          "price": 148,
+          "date": "2026-10-17"
+        },
+        {
+          "price": 152,
+          "date": "2026-10-14"
+        },
+        {
+          "price": 150,
+          "date": "2026-10-11"
+        },
+        {
+          "price": 149,
+          "date": "2026-10-08"
+        },
+        {
+          "price": 151,
+          "date": "2026-10-05"
+        }
+      ],
+      "sold_avg": 150,
+      "sold_count": 7
+    },
+    "expected": {
+      "verdict": "hold"
+    },
+    "category": "hold",
+    "graders": [
+      "schema",
+      "verdict",
+      "vs_market_math",
+      "confidence_cap",
+      "pnl_presence"
+    ]
+  },
+  {
+    "task_id": "hold-08",
+    "description": "Owned: 4% under cost, far from its $700 sell target",
+    "card": {
+      "name": "Rayquaza VMAX 218/203",
+      "set_code": "EVS",
+      "grade": "Raw",
+      "status": "owned",
+      "purchase_price": 500,
+      "target_sell": 700
+    },
+    "market": {
+      "best_listing": 470,
+      "listings": [
+        {
+          "price": 470,
+          "condition": "Raw \u00b7 Near Mint",
+          "url": ""
+        }
+      ],
+      "sold_comps": [
+        {
+          "price": 478,
+          "date": "2026-10-17"
+        },
+        {
+          "price": 482,
+          "date": "2026-10-14"
+        },
+        {
+          "price": 480,
+          "date": "2026-10-11"
+        },
+        {
+          "price": 479,
+          "date": "2026-10-08"
+        },
+        {
+          "price": 481,
+          "date": "2026-10-05"
+        }
+      ],
+      "sold_avg": 480,
+      "sold_count": 8
+    },
+    "expected": {
+      "verdict": "hold"
+    },
+    "category": "hold",
+    "graders": [
+      "schema",
+      "verdict",
+      "vs_market_math",
+      "confidence_cap",
+      "pnl_presence"
+    ]
+  }
+]

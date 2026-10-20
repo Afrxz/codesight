@@ -1,0 +1,28 @@
+# Packaging, so the MCP server can be installed and launched as a command:
+#     pip install -e .        ->  tcg-mcp-server
+# The app itself is still run from the project folder (see README.md).
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "tcg-market-agent"
+version = "1.0.0"
+description = "Pokémon card decision-support agent, with an MCP server for its market-data layer"
+readme = "README.md"
+dependencies = [
+    "requests>=2.31,<3",
+    "pydantic>=2.6,<3",
+    "python-dotenv>=1.0,<2",
+    "openai>=1.30,<2",
+    "mcp>=1.10,<2",
+]
+
+[project.scripts]
+tcg-mcp-server = "mcp_server.server:main"
+
+[tool.setuptools]
+packages = ["src", "src.market", "src.eval", "mcp_server"]
+
+[tool.setuptools.package-data]
+"src.eval" = ["suite/*.json"]

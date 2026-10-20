@@ -1,0 +1,2 @@
+Frozen copy of the TCG Portfolio & Market Agent source (2026-10-20), the eval corpus.
+Do not edit: the gold answers in eval/qa.jsonl point at these exact files and lines.

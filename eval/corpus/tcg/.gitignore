@@ -1,0 +1,23 @@
+# Secrets — never commit the real .env (only .env.example is tracked)
+.env
+
+# Local data: SQLite database, cached API responses, decision output, raw eval
+# runs. The one exception is the measured eval write-up, data/eval/RESULTS.md.
+data/*
+!data/eval/
+data/eval/*
+!data/eval/RESULTS.md
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.pytest_cache/
+
+# OS / editor noise
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/

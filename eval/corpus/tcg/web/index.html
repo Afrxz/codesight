@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Card Binder</title>
+  <meta name="description" content="Pokémon card binder with buy / hold / sell recommendations.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect x='7' y='3' width='18' height='26' rx='3' fill='%233987e5'/%3E%3Crect x='10' y='6' width='12' height='9' rx='1.5' fill='%23f0efec'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="/binder.css">
+</head>
+<body>
+  <div class="wrap">
+    <header class="topbar">
+      <div class="topbar-left">
+        <button id="settings-btn" class="icon-btn settings-btn" type="button" aria-label="Settings" title="Settings">
+          <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="3"/>
+            <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 1 1-4 0v-.09a1.65 1.65 0 0 0-1.08-1.51 1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 1 1 0-4h.09a1.65 1.65 0 0 0 1.51-1.08 1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 1 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 1 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/>
+          </svg>
+        </button>
+        <div class="brand">
+          <h1>Card Binder</h1>
+          <p class="tagline">Buy / hold / sell recommendations with reasons. Decision support only, not investment advice.</p>
+        </div>
+      </div>
+      <div class="run-controls">
+        <span id="last-run" class="last-run"></span>
+        <button id="alerts-btn" class="icon-btn bell" type="button" aria-label="Alerts" title="Alerts">
+          <svg viewBox="0 0 24 24" width="19" height="19" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M18 8a6 6 0 0 0-12 0c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/>
+          </svg>
+          <span id="alerts-badge" class="badge" hidden></span>
+        </button>
+        <button id="add-btn" class="btn btn-primary" type="button">+ Add card</button>
+        <button id="run-btn" class="btn" type="button">Re-run agent</button>
+      </div>
+    </header>
+
+    <section id="briefing" class="briefing" aria-label="Agent briefing"></section>
+
+    <section id="summary" class="summary" aria-label="Collection summary"></section>
+
+    <nav id="tabs" class="tabs" role="tablist" aria-label="Filter cards"></nav>
+
+    <main>
+      <div id="notice" class="notice" hidden></div>
+      <div id="binder" class="binder" aria-live="polite"></div>
+      <div class="pager">
+        <button id="prev-page" class="icon-btn" type="button" aria-label="Previous pages">‹</button>
+        <span id="page-label"></span>
+        <button id="next-page" class="icon-btn" type="button" aria-label="Next pages">›</button>
+      </div>
+    </main>
+  </div>
+
+  <dialog id="detail" aria-labelledby="detail-title"></dialog>
+  <dialog id="settings" aria-labelledby="settings-title"></dialog>
+  <dialog id="add" aria-labelledby="add-title"></dialog>
+  <dialog id="alerts" class="side-dialog" aria-labelledby="alerts-title"></dialog>
+  <dialog id="track" class="side-dialog" aria-labelledby="track-title"></dialog>
+  <div id="toast" class="toast" role="status" hidden></div>
+
+  <script src="/binder.js"></script>
+</body>
+</html>

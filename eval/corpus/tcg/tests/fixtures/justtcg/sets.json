@@ -1,0 +1,44 @@
+{
+ "data": [
+  {
+   "id": "me-30th-celebration-pokemon",
+   "name": "ME: 30th Celebration",
+   "game_id": "pokemon",
+   "game": "Pokemon",
+   "count": 170,
+   "cards_count": 170,
+   "variants_count": 850,
+   "sealed_count": 52,
+   "release_date": "2026-09-16T00:00:00.000Z",
+   "set_value_usd": 11444.27,
+   "set_value_change_7d_pct": -13.519063,
+   "set_value_change_30d_pct": 24485.498779,
+   "set_value_change_90d_pct": 24485.240151
+  },
+  {
+   "id": "me-30th-celebration-classic-collection-pokemon",
+   "name": "ME: 30th Celebration Classic Collection",
+   "game_id": "pokemon",
+   "game": "Pokemon",
+   "count": 30,
+   "cards_count": 30,
+   "variants_count": 151,
+   "sealed_count": 0,
+   "release_date": "2026-09-16T00:00:00.000Z",
+   "set_value_usd": 903.72,
+   "set_value_change_7d_pct": -2.011455,
+   "set_value_change_30d_pct": -3.845769,
+   "set_value_change_90d_pct": -2.928083
+  }
+ ],
+ "meta": {
+  "total": 2,
+  "limit": 2,
+  "offset": 0,
+  "hasMore": false
+ },
+ "_metadata": {
+  "apiPlan": "Free Tier",
+  "apiRequestsRemaining": 996
+ }
+}

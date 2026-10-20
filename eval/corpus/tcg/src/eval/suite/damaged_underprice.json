@@ -1,0 +1,302 @@
+[
+  {
+    "task_id": "damaged-01",
+    "description": "Cheapest is a Damaged copy, 58% under the NM average",
+    "card": {
+      "name": "Charizard 4/102",
+      "set_code": "BS",
+      "grade": "Raw",
+      "status": "watching"
+    },
+    "market": {
+      "best_listing": 85,
+      "listings": [
+        {
+          "price": 85,
+          "condition": "Raw \u00b7 Damaged",
+          "url": ""
+        },
+        {
+          "price": 194.0,
+          "condition": "Raw \u00b7 Near Mint",
+          "url": ""
+        }
+      ],
+      "sold_comps": [
+        {
+          "price": 196.0,
+          "date": "2026-10-17"
+        },
+        {
+          "price": 204.0,
+          "date": "2026-10-14"
+        },
+        {
+          "price": 200.0,
+          "date": "2026-10-11"
+        },
+        {
+          "price": 198.0,
+          "date": "2026-10-08"
+        },
+        {
+          "price": 202.0,
+          "date": "2026-10-05"
+        }
+      ],
+      "sold_avg": 200,
+      "sold_count": 9
+    },
+    "expected": {
+      "verdict": "hold"
+    },
+    "category": "damaged_underprice",
+    "graders": [
+      "schema",
+      "verdict",
+      "vs_market_math",
+      "confidence_cap",
+      "pnl_presence"
+    ]
+  },
+  {
+    "task_id": "damaged-02",
+    "description": "Cheapest is Heavily Played, 56% under the NM average",
+    "card": {
+      "name": "Mew ex 232/091",
+      "set_code": "PAF",
+      "grade": "Raw",
+      "status": "watching"
+    },
+    "market": {
+      "best_listing": 380,
+      "listings": [
+        {
+          "price": 380,
+          "condition": "Raw \u00b7 Heavily Played",
+          "url": ""
+        },
+        {
+          "price": 834.2,
+          "condition": "Raw \u00b7 Near Mint",
+          "url": ""
+        }
+      ],
+      "sold_comps": [
+        {
+          "price": 842.8,
+          "date": "2026-10-17"
+        },
+        {
+          "price": 877.2,
+          "date": "2026-10-14"
+        },
+        {
+          "price": 860.0,
+          "date": "2026-10-11"
+        },
+        {
+          "price": 851.4,
+          "date": "2026-10-08"
+        },
+        {
+          "price": 868.6,
+          "date": "2026-10-05"
+        }
+      ],
+      "sold_avg": 860,
+      "sold_count": 9
+    },
+    "expected": {
+      "verdict": "hold"
+    },
+    "category": "damaged_underprice",
+    "graders": [
+      "schema",
+      "verdict",
+      "vs_market_math",
+      "confidence_cap",
+      "pnl_presence"
+    ]
+  },
+  {
+    "task_id": "damaged-03",
+    "description": "Cheapest is an any-condition 'low' price, 53% under",
+    "card": {
+      "name": "Moltres 146/165",
+      "set_code": "151",
+      "grade": "Raw",
+      "status": "watching"
+    },
+    "market": {
+      "best_listing": 70,
+      "listings": [
+        {
+          "price": 70,
+          "condition": "TCGplayer low, any condition",
+          "url": ""
+        },
+        {
+          "price": 145.5,
+          "condition": "Raw \u00b7 Near Mint",
+          "url": ""
+        }
+      ],
+      "sold_comps": [
+        {
+          "price": 147.0,
+          "date": "2026-10-17"
+        },
+        {
+          "price": 153.0,
+          "date": "2026-10-14"
+        },
+        {
+          "price": 150.0,
+          "date": "2026-10-11"
+        },
+        {
+          "price": 148.5,
+          "date": "2026-10-08"
+        },
+        {
+          "price": 151.5,
+          "date": "2026-10-05"
+        }
+      ],
+      "sold_avg": 150,
+      "sold_count": 9
+    },
+    "expected": {
+      "verdict": "hold"
+    },
+    "category": "damaged_underprice",
+    "graders": [
+      "schema",
+      "verdict",
+      "vs_market_math",
+      "confidence_cap",
+      "pnl_presence"
+    ]
+  },
+  {
+    "task_id": "damaged-04",
+    "description": "Cheapest is Damaged (creased), 54% under",
+    "card": {
+      "name": "Umbreon V 189/203",
+      "set_code": "EVS",
+      "grade": "Raw",
+      "status": "watching"
+    },
+    "market": {
+      "best_listing": 240,
+      "listings": [
+        {
+          "price": 240,
+          "condition": "Raw \u00b7 Damaged (creased)",
+          "url": ""
+        },
+        {
+          "price": 504.4,
+          "condition": "Raw \u00b7 Near Mint",
+          "url": ""
+        }
+      ],
+      "sold_comps": [
+        {
+          "price": 509.6,
+          "date": "2026-10-17"
+        },
+        {
+          "price": 530.4,
+          "date": "2026-10-14"
+        },
+        {
+          "price": 520.0,
+          "date": "2026-10-11"
+        },
+        {
+          "price": 514.8,
+          "date": "2026-10-08"
+        },
+        {
+          "price": 525.2,
+          "date": "2026-10-05"
+        }
+      ],
+      "sold_avg": 520,
+      "sold_count": 9
+    },
+    "expected": {
+      "verdict": "hold"
+    },
+    "category": "damaged_underprice",
+    "graders": [
+      "schema",
+      "verdict",
+      "vs_market_math",
+      "confidence_cap",
+      "pnl_presence"
+    ]
+  },
+  {
+    "task_id": "damaged-05",
+    "description": "Cheapest is Heavily Played, 58% under",
+    "card": {
+      "name": "Pikachu 58/102",
+      "set_code": "BS",
+      "grade": "Raw",
+      "status": "watching"
+    },
+    "market": {
+      "best_listing": 40,
+      "listings": [
+        {
+          "price": 40,
+          "condition": "Raw \u00b7 Heavily Played",
+          "url": ""
+        },
+        {
+          "price": 92.15,
+          "condition": "Raw \u00b7 Near Mint",
+          "url": ""
+        }
+      ],
+      "sold_comps": [
+        {
+          "price": 93.1,
+          "date": "2026-10-17"
+        },
+        {
+          "price": 96.9,
+          "date": "2026-10-14"
+        },
+        {
+          "price": 95.0,
+          "date": "2026-10-11"
+        },
+        {
+          "price": 94.05,
+          "date": "2026-10-08"
+        },
+        {
+          "price": 95.95,
+          "date": "2026-10-05"
+        }
+      ],
+      "sold_avg": 95,
+      "sold_count": 9
+    },
+    "expected": {
+      "verdict": "hold"
+    },
+    "category": "damaged_underprice",
+    "graders": [
+      "schema",
+      "verdict",
+      "vs_market_math",
+      "confidence_cap",
+      "pnl_presence"
+    ]
+  }
+]

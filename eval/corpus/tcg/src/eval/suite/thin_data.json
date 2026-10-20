@@ -1,0 +1,213 @@
+[
+  {
+    "task_id": "thin-01",
+    "description": "Two sales only, listing under target",
+    "card": {
+      "name": "Mew ex 232/091",
+      "set_code": "PAF",
+      "grade": "Raw",
+      "status": "watching",
+      "target_buy": 120
+    },
+    "market": {
+      "best_listing": 95,
+      "listings": [
+        {
+          "price": 95,
+          "condition": "Raw \u00b7 Near Mint",
+          "url": ""
+        }
+      ],
+      "sold_comps": [
+        {
+          "price": 100,
+          "date": "2026-10-17"
+        },
+        {
+          "price": 120,
+          "date": "2026-10-14"
+        }
+      ],
+      "sold_avg": 110,
+      "sold_count": 2
+    },
+    "expected": {
+      "confidence_max": "low"
+    },
+    "category": "thin_data",
+    "graders": [
+      "schema",
+      "verdict",
+      "vs_market_math",
+      "confidence_cap",
+      "pnl_presence"
+    ]
+  },
+  {
+    "task_id": "thin-02",
+    "description": "One sale only, listing looks 33% under it",
+    "card": {
+      "name": "Lucario VSTAR 214/189",
+      "set_code": "ASR",
+      "grade": "Raw",
+      "status": "watching"
+    },
+    "market": {
+      "best_listing": 300,
+      "listings": [
+        {
+          "price": 300,
+          "condition": "Raw \u00b7 Near Mint",
+          "url": ""
+        }
+      ],
+      "sold_comps": [
+        {
+          "price": 450,
+          "date": "2026-10-17"
+        }
+      ],
+      "sold_avg": 450,
+      "sold_count": 1
+    },
+    "expected": {
+      "confidence_max": "low"
+    },
+    "category": "thin_data",
+    "graders": [
+      "schema",
+      "verdict",
+      "vs_market_math",
+      "confidence_cap",
+      "pnl_presence"
+    ]
+  },
+  {
+    "task_id": "thin-03",
+    "description": "Owned, two sales only",
+    "card": {
+      "name": "Snorlax 143/165",
+      "set_code": "151",
+      "grade": "Raw",
+      "status": "owned",
+      "purchase_price": 50
+    },
+    "market": {
+      "best_listing": 78,
+      "listings": [
+        {
+          "price": 78,
+          "condition": "Raw \u00b7 Near Mint",
+          "url": ""
+        }
+      ],
+      "sold_comps": [
+        {
+          "price": 79,
+          "date": "2026-10-17"
+        },
+        {
+          "price": 81,
+          "date": "2026-10-14"
+        }
+      ],
+      "sold_avg": 80,
+      "sold_count": 2
+    },
+    "expected": {
+      "confidence_max": "low"
+    },
+    "category": "thin_data",
+    "graders": [
+      "schema",
+      "verdict",
+      "vs_market_math",
+      "confidence_cap",
+      "pnl_presence"
+    ]
+  },
+  {
+    "task_id": "thin-04",
+    "description": "Two sales, listing near them",
+    "card": {
+      "name": "Dragonite V 192/203",
+      "set_code": "EVS",
+      "grade": "Raw",
+      "status": "watching"
+    },
+    "market": {
+      "best_listing": 200,
+      "listings": [
+        {
+          "price": 200,
+          "condition": "Raw \u00b7 Near Mint",
+          "url": ""
+        }
+      ],
+      "sold_comps": [
+        {
+          "price": 205,
+          "date": "2026-10-17"
+        },
+        {
+          "price": 215,
+          "date": "2026-10-14"
+        }
+      ],
+      "sold_avg": 210,
+      "sold_count": 2
+    },
+    "expected": {
+      "confidence_max": "low"
+    },
+    "category": "thin_data",
+    "graders": [
+      "schema",
+      "verdict",
+      "vs_market_math",
+      "confidence_cap",
+      "pnl_presence"
+    ]
+  },
+  {
+    "task_id": "thin-05",
+    "description": "Owned past its sell target, but on one sale",
+    "card": {
+      "name": "Zekrom 106/203",
+      "set_code": "EVS",
+      "grade": "Raw",
+      "status": "owned",
+      "purchase_price": 100,
+      "target_sell": 350
+    },
+    "market": {
+      "best_listing": 390,
+      "listings": [
+        {
+          "price": 390,
+          "condition": "Raw \u00b7 Near Mint",
+          "url": ""
+        }
+      ],
+      "sold_comps": [
+        {
+          "price": 400,
+          "date": "2026-10-17"
+        }
+      ],
+      "sold_avg": 400,
+      "sold_count": 1
+    },
+    "expected": {
+      "confidence_max": "low"
+    },
+    "category": "thin_data",
+    "graders": [
+      "schema",
+      "verdict",
+      "vs_market_math",
+      "confidence_cap",
+      "pnl_presence"
+    ]
+  }
+]

@@ -1,0 +1,307 @@
+[
+  {
+    "task_id": "outlier-01",
+    "description": "One $600 sale among ~$100 sales",
+    "card": {
+      "name": "Charmander 168/165",
+      "set_code": "151",
+      "grade": "Raw",
+      "status": "watching"
+    },
+    "market": {
+      "best_listing": 104,
+      "listings": [
+        {
+          "price": 104,
+          "condition": "Raw \u00b7 Near Mint",
+          "url": ""
+        }
+      ],
+      "sold_comps": [
+        {
+          "price": 98,
+          "date": "2026-10-17"
+        },
+        {
+          "price": 102,
+          "date": "2026-10-14"
+        },
+        {
+          "price": 100,
+          "date": "2026-10-11"
+        },
+        {
+          "price": 99,
+          "date": "2026-10-08"
+        },
+        {
+          "price": 600,
+          "date": "2026-10-05"
+        }
+      ],
+      "sold_avg": 199.8,
+      "sold_count": 5
+    },
+    "tool_fixtures": {
+      "second_source": {
+        "source": "second source",
+        "market_price": 100
+      }
+    },
+    "expected": {
+      "verdict": "hold"
+    },
+    "category": "outlier_comps",
+    "graders": [
+      "schema",
+      "verdict",
+      "vs_market_math",
+      "confidence_cap",
+      "pnl_presence"
+    ]
+  },
+  {
+    "task_id": "outlier-02",
+    "description": "One $2,500 sale among ~$250 sales",
+    "card": {
+      "name": "Leafeon VSTAR 211/196",
+      "set_code": "LOR",
+      "grade": "Raw",
+      "status": "watching"
+    },
+    "market": {
+      "best_listing": 255,
+      "listings": [
+        {
+          "price": 255,
+          "condition": "Raw \u00b7 Near Mint",
+          "url": ""
+        }
+      ],
+      "sold_comps": [
+        {
+          "price": 250,
+          "date": "2026-10-17"
+        },
+        {
+          "price": 240,
+          "date": "2026-10-14"
+        },
+        {
+          "price": 260,
+          "date": "2026-10-11"
+        },
+        {
+          "price": 255,
+          "date": "2026-10-08"
+        },
+        {
+          "price": 2500,
+          "date": "2026-10-05"
+        }
+      ],
+      "sold_avg": 701.0,
+      "sold_count": 5
+    },
+    "tool_fixtures": {
+      "second_source": {
+        "source": "second source",
+        "market_price": 255
+      }
+    },
+    "expected": {
+      "verdict": "hold"
+    },
+    "category": "outlier_comps",
+    "graders": [
+      "schema",
+      "verdict",
+      "vs_market_math",
+      "confidence_cap",
+      "pnl_presence"
+    ]
+  },
+  {
+    "task_id": "outlier-03",
+    "description": "One $350 sale among ~$40 sales",
+    "card": {
+      "name": "Psyduck 175/165",
+      "set_code": "151",
+      "grade": "Raw",
+      "status": "watching"
+    },
+    "market": {
+      "best_listing": 45,
+      "listings": [
+        {
+          "price": 45,
+          "condition": "Raw \u00b7 Near Mint",
+          "url": ""
+        }
+      ],
+      "sold_comps": [
+        {
+          "price": 40,
+          "date": "2026-10-17"
+        },
+        {
+          "price": 42,
+          "date": "2026-10-14"
+        },
+        {
+          "price": 38,
+          "date": "2026-10-11"
+        },
+        {
+          "price": 41,
+          "date": "2026-10-08"
+        },
+        {
+          "price": 350,
+          "date": "2026-10-05"
+        }
+      ],
+      "sold_avg": 102.2,
+      "sold_count": 5
+    },
+    "tool_fixtures": {
+      "second_source": {
+        "source": "second source",
+        "market_price": 41
+      }
+    },
+    "expected": {
+      "verdict": "hold"
+    },
+    "category": "outlier_comps",
+    "graders": [
+      "schema",
+      "verdict",
+      "vs_market_math",
+      "confidence_cap",
+      "pnl_presence"
+    ]
+  },
+  {
+    "task_id": "outlier-04",
+    "description": "One $9,000 sale among ~$1,200 sales",
+    "card": {
+      "name": "Rayquaza Gold Star 107/107",
+      "set_code": "DEX",
+      "grade": "Raw",
+      "status": "watching"
+    },
+    "market": {
+      "best_listing": 1250,
+      "listings": [
+        {
+          "price": 1250,
+          "condition": "Raw \u00b7 Near Mint",
+          "url": ""
+        }
+      ],
+      "sold_comps": [
+        {
+          "price": 1200,
+          "date": "2026-10-17"
+        },
+        {
+          "price": 1180,
+          "date": "2026-10-14"
+        },
+        {
+          "price": 1220,
+          "date": "2026-10-11"
+        },
+        {
+          "price": 9000,
+          "date": "2026-10-08"
+        }
+      ],
+      "sold_avg": 3150.0,
+      "sold_count": 4
+    },
+    "tool_fixtures": {
+      "second_source": {
+        "source": "second source",
+        "market_price": 1220
+      }
+    },
+    "expected": {
+      "verdict": "hold"
+    },
+    "category": "outlier_comps",
+    "graders": [
+      "schema",
+      "verdict",
+      "vs_market_math",
+      "confidence_cap",
+      "pnl_presence"
+    ]
+  },
+  {
+    "task_id": "outlier-05",
+    "description": "One $700 sale among ~$77 sales",
+    "card": {
+      "name": "Squirtle 170/165",
+      "set_code": "151",
+      "grade": "Raw",
+      "status": "watching"
+    },
+    "market": {
+      "best_listing": 82,
+      "listings": [
+        {
+          "price": 82,
+          "condition": "Raw \u00b7 Near Mint",
+          "url": ""
+        }
+      ],
+      "sold_comps": [
+        {
+          "price": 75,
+          "date": "2026-10-17"
+        },
+        {
+          "price": 80,
+          "date": "2026-10-14"
+        },
+        {
+          "price": 78,
+          "date": "2026-10-11"
+        },
+        {
+          "price": 72,
+          "date": "2026-10-08"
+        },
+        {
+          "price": 77,
+          "date": "2026-10-05"
+        },
+        {
+          "price": 700,
+          "date": "2026-10-02"
+        }
+      ],
+      "sold_avg": 180.33,
+      "sold_count": 6
+    },
+    "tool_fixtures": {
+      "second_source": {
+        "source": "second source",
+        "market_price": 78
+      }
+    },
+    "expected": {
+      "verdict": "hold"
+    },
+    "category": "outlier_comps",
+    "graders": [
+      "schema",
+      "verdict",
+      "vs_market_math",
+      "confidence_cap",
+      "pnl_presence"
+    ]
+  }
+]

@@ -1,0 +1,135 @@
+[
+  {
+    "task_id": "missing-01",
+    "description": "Card not found at the source",
+    "card": {
+      "name": "Unknown Promo 999/999",
+      "set_code": "TST",
+      "grade": "Raw",
+      "status": "watching"
+    },
+    "market": {
+      "source_note": "Couldn't find this card on the source."
+    },
+    "expected": {
+      "verdict": "hold",
+      "confidence_max": "low"
+    },
+    "category": "missing_data",
+    "graders": [
+      "schema",
+      "verdict",
+      "vs_market_math",
+      "confidence_cap",
+      "pnl_presence"
+    ]
+  },
+  {
+    "task_id": "missing-02",
+    "description": "Listings but no sales at all",
+    "card": {
+      "name": "Eevee 133/165",
+      "set_code": "151",
+      "grade": "Raw",
+      "status": "watching"
+    },
+    "market": {
+      "best_listing": 50,
+      "listings": [
+        {
+          "price": 50,
+          "condition": "Raw \u00b7 Near Mint",
+          "url": ""
+        }
+      ],
+      "sold_comps": [],
+      "sold_avg": null,
+      "sold_count": 0
+    },
+    "expected": {
+      "verdict": "hold",
+      "confidence_max": "low"
+    },
+    "category": "missing_data",
+    "graders": [
+      "schema",
+      "verdict",
+      "vs_market_math",
+      "confidence_cap",
+      "pnl_presence"
+    ]
+  },
+  {
+    "task_id": "missing-03",
+    "description": "Price expired, no current reports",
+    "card": {
+      "name": "Vaporeon VMAX 181/203",
+      "set_code": "EVS",
+      "grade": "Raw",
+      "status": "watching"
+    },
+    "market": {
+      "source_note": "JustTCG's Near Mint Holofoil price has expired; no current reports."
+    },
+    "expected": {
+      "verdict": "hold",
+      "confidence_max": "low"
+    },
+    "category": "missing_data",
+    "graders": [
+      "schema",
+      "verdict",
+      "vs_market_math",
+      "confidence_cap",
+      "pnl_presence"
+    ]
+  },
+  {
+    "task_id": "missing-04",
+    "description": "Owned card, source returned nothing",
+    "card": {
+      "name": "Jolteon VMAX 182/203",
+      "set_code": "EVS",
+      "grade": "Raw",
+      "status": "owned",
+      "purchase_price": 200
+    },
+    "market": {},
+    "expected": {
+      "verdict": "hold",
+      "confidence_max": "low"
+    },
+    "category": "missing_data",
+    "graders": [
+      "schema",
+      "verdict",
+      "vs_market_math",
+      "confidence_cap",
+      "pnl_presence"
+    ]
+  },
+  {
+    "task_id": "missing-05",
+    "description": "Watched with a buy target, source returned nothing",
+    "card": {
+      "name": "Flareon VMAX 180/203",
+      "set_code": "EVS",
+      "grade": "Raw",
+      "status": "watching",
+      "target_buy": 150
+    },
+    "market": {},
+    "expected": {
+      "verdict": "hold",
+      "confidence_max": "low"
+    },
+    "category": "missing_data",
+    "graders": [
+      "schema",
+      "verdict",
+      "vs_market_math",
+      "confidence_cap",
+      "pnl_presence"
+    ]
+  }
+]

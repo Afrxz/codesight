@@ -1,0 +1,23 @@
+# Secrets: never commit the real .env (only .env.example is tracked)
+.env
+
+# Local data: the index, downloaded models, cloned repos, logs.
+# Anchored with a leading slash so the eval corpus's own data/ folder is kept.
+/data/
+
+# Eval scratch space (its own index); results are kept, the work folder isn't.
+/eval/.work/
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.pytest_cache/
+
+# OS / editor noise
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
